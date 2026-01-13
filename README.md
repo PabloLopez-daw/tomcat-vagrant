@@ -22,3 +22,6 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
+3. Hacemos vagrant up y vagrant ssh, levantamos la maquina y nos metemos en ella 
+
+4. 
