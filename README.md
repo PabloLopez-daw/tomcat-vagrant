@@ -44,3 +44,7 @@ sudo tar -xvzf apache-tomcat-10.1.18.tar.gz
 sudo mv apache-tomcat-10.1.18 tomcat
 ```
 
+7. Le damos los permisos necesarios al tomcat 
+``` bash
+sudo chmod +x -R /opt/tomcat
+```
