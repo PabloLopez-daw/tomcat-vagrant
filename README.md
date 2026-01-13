@@ -67,7 +67,7 @@ sudo nano /opt/tomcat/conf/tomcat-users.xml
   <role rolename="manager-gui"/>
   <role rolename="manager-script"/>
 
-  <user username="admin" password="admin123"
+  <user username="admin" password="adminpassword"
         roles="manager-gui,manager-script"/>
 </tomcat-users>
 
