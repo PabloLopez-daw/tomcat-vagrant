@@ -87,3 +87,16 @@ git clone https://github.com/cameronmcnz/rock-paper-scissors.git
 cd rock-paper-scissors
 git checkout patch-1
 ```
+
+2. Editamos el pom.xml y añadimos un plugin y ponemos lo siguiente 
+```xml
+<plugin>
+   <groupId>org.apache.tomcat.maven</groupId>
+   <artifactId>tomcat7-maven-plugin</artifactId>
+   <version>2.2</version>
+   <configuration>
+      <url>http://localhost:8080/manager/text</url>
+      <server>TomcatServer</server> <path>/juego-suerte</path>
+   </configuration>
+</plugin>
+```
