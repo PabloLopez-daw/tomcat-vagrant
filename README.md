@@ -100,3 +100,9 @@ git checkout patch-1
    </configuration>
 </plugin>
 ```
+3. Desplegamos la web y lo movemos a webapps y le cambiamos el nombre 
+``` bash
+mvn clean compile package tomcat7:deploy
+mvn tomcat7:redeploy
+sudo cp target/roshambo.war /opt/tomcat/webapps/juego-suerte.war
+```
