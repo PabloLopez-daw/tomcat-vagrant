@@ -24,4 +24,9 @@ end
 ```
 3. Hacemos vagrant up y vagrant ssh, levantamos la maquina y nos metemos en ella 
 
-4. 
+4. Actualizamos la maquina y instalamos el jdk
+
+``` bash
+sudo apt update
+sudo apt install openjdk-17-jdk -y
+```
