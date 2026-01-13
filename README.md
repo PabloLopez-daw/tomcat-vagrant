@@ -55,19 +55,35 @@ sudo chmod -R 755 /opt/tomcat
 /opt/tomcat/bin/startup.sh
 ```
 
+# Prueba 
+
 9. Configuramos los usuarios de tomcat con los siguientes codigos 
 ``` bash
 sudo nano /opt/tomcat/conf/tomcat-users.xml
 ```
 
 ``` xml
-<role rolename="manager-gui"/>
-<role rolename="manager-script"/>
-<user username="admin" password="admin123" roles="manager-gui,manager-script"/>
+<tomcat-users>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+
+  <user username="admin" password="admin123"
+        roles="manager-gui,manager-script"/>
+</tomcat-users>
+
 ```
 
 10. Apagamos el tomcat y lo volvemos a iniciar 
 ``` bash 
 /opt/tomcat/bin/shutdown.sh
 /opt/tomcat/bin/startup.sh
+```
+
+# Tarea 
+
+1. Clonar reposistorio de github y nos movemos a la rama correcta 
+``` bash 
+git clone https://github.com/cameronmcnz/rock-paper-scissors.git
+cd rock-paper-scissors
+git checkout patch-1
 ```
