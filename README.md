@@ -37,3 +37,10 @@ cd /opt
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.18/bin/apache-tomcat-10.1.18.tar.gz
 ```
 
+6. Descomprimimos el tar.gz que nos han dado al descargarlo y lo movemos en otro directorio tomcat
+
+``` bash 
+sudo tar -xvzf apache-tomcat-10.1.18.tar.gz
+sudo mv apache-tomcat-10.1.18 tomcat
+```
+
