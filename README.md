@@ -54,3 +54,20 @@ sudo chmod -R 755 /opt/tomcat
 ``` bash
 /opt/tomcat/bin/startup.sh
 ```
+
+9. Configuramos los usuarios de tomcat con los siguientes codigos 
+``` bash
+sudo nano /opt/tomcat/conf/tomcat-users.xml
+```
+
+``` xml
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<user username="admin" password="admin123" roles="manager-gui,manager-script"/>
+```
+
+10. Apagamos el tomcat y lo volvemos a iniciar 
+``` bash 
+/opt/tomcat/bin/shutdown.sh
+/opt/tomcat/bin/startup.sh
+```
