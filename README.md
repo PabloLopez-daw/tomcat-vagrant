@@ -46,5 +46,11 @@ sudo mv apache-tomcat-10.1.18 tomcat
 
 7. Le damos los permisos necesarios al tomcat 
 ``` bash
-sudo chmod +x -R /opt/tomcat
+sudo chown -R vagrant:vagrant /opt/tomcat
+sudo chmod -R 755 /opt/tomcat
+```
+
+8. Arramcamos el Tomcat con el siguiente comando 
+``` bash
+/opt/tomcat/bin/startup.sh
 ```
